@@ -9,6 +9,7 @@ spread to the Chinese world.
 &ensp;&ensp;&ensp;&ensp;All books that under translating or to be translating are inside `booklist.md`. The text book file according to bookname inside `booklist.md` should be updated and located under `books` directory.
 
 + Add a book
+
 &ensp;&ensp;&ensp;&ensp;If you want to add a new book, There are some notices you should pay some attention to.
 
 1. Make sure the book you are adding is not be translated or well translated yet into Chinese.
