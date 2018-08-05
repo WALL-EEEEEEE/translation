@@ -12,8 +12,11 @@ spread to the Chinese world.
 
 &ensp;&ensp;&ensp;&ensp;If you want to add a new book, There are some notices you should pay some attention to.
 
-1. Make sure the book you are adding is not be translated or well translated yet into Chinese.
+1. Make sure the book you are adding is not be translated or well translated into Chinese yet. 
 2. Any book that you added into `booklist.md`, you should attach the link after the bookname in `markdown` style, for example:`
 [bookname](link refered to the book file)`.
 
 
+### Translate a book
+
+&ensp;&ensp;&ensp;&ensp; For all collaborating translators , 
