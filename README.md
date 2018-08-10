@@ -14,7 +14,7 @@ translate some books referred to IT(mainly to Big Data, and AI fields)
 
 1. Make sure the book you are adding is not be translated or well translated into Chinese yet. 
 2. Any book that you added into `booklist.md`, you should attach the link after the bookname in `markdown` style, for example:
-[bookname(https://github.com/duanqiaobb/translation/tree/ea3e459b7be0c456e558348d132bcff7f3496d30/link%20refered%20to%20the%20book%20file/README.md).
+[bookname](https://github.com/duanqiaobb/translation/tree/ea3e459b7be0c456e558348d132bcff7f3496d30/link%20refered%20to%20the%20book%20file/README.md).
 
 ### Translate a book
 
