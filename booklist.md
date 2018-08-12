@@ -7,6 +7,5 @@
 * [Mastering Etherum, by Andreas M. Antonopoulos, Gavin Wood](https://github.com/ethereumbook/ethereumbook)
 * [Building Etherum DApps Decentralized Applications on the Ethereum Blockchain](https://livebook.manning.com/#!/book/building-ethereum-dapps/chapter-4/v-5/8)
 * [Pro Machine Learning Algorithms: A Hands-On Approach to Implementing Algorithms in Python and R](https://github.com/duanqiaobb/translation/blob/master/books/Pro%20Machine%20Learning%20Algorithms.pdf)
-
 * [Machine Learning Refined](https://github.com/duanqiaobb/translation/blob/master/books/Machine%20Learning%20Refined.pdf)
 
