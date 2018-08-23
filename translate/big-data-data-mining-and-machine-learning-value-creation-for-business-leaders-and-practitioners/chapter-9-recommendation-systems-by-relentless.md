@@ -74,5 +74,23 @@ $$
 \min\limits_{l_u,r_i} \sum\limits_{(u,i) \in D} (x_{ui} - l_ux_i)^2 + \lambda\lgroup\sum_u \parallel l_u\parallel^2 + \sum_i \parallel r_i\parallel^2\rgroup
 $$
 
+同样，该模型通过加入因子范式来避免过度拟合。随机梯度下降和交替最小二乘法是解决这个问题的最常用的方法。
 
+## 随机梯度下降法
+
+梯度随机下降法首先设定两个初始值， $$l_u$$，$$r_i$$ ，然后在此基础上的物体的负梯度方向不断更新相对应的值，如下式：
+
+$$
+l_u\leftarrow l_u - \eta (e_{ui}r_i - \lambda l_u)
+$$
+
+$$
+r_i \leftarrow r_i - \eta(e_{ui}l_u - \lambda r_i)
+$$
+
+其中 ：
+
+$$e_{ui} \triangleq x_{ui} - l_u.r_i$$ 为 $$(u,i)$$ 对排名的预测误差。
+
+  $$\eta$$ 为用户定义的学习步长。
 
