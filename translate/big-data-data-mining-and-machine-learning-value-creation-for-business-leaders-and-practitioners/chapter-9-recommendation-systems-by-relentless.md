@@ -144,7 +144,47 @@ $$
 
 其中， $$b_i^q$$ 为方差。多个用户对同一个物品进行排名，所有的用户网络的共享连接权重和误差，但是每个用户的隐藏和可见的单元有不同的状态。
 
+## 对比散度
 
+     波兹曼限量机（RBM）的参数是，权重和误差。权重和误差通过最大化可见神经单元的边缘可似性来获得，如下式:
 
+$$
+p(V) = \sum_h \frac{exp(-E(V,h))}{\sum_{V’,h’}exp(-E(V’,h’))}
+$$
 
+ 其中 $$E(V,h)$$ 表示网络配置中的能量，通过下式表示：
+
+$$
+E(V,h) = - \sum_{i=1}^m\sum_{k=1}^K\sum_{q=1}^Qw_{ki}^qh_kv_i^q+\sum_{i=1}^mlogZ_i - \sum_{i=1}^m\sum_{q=1}^Q v_i^qb_i^q - \sum_{k=1}^Kh_kb_k
+$$
+
+其中 $$Z_i$$是归一化常量，学习是通过 $$\log p(V)$$ 的梯度上升的方法来进行的。权重通过下式进行更新：
+
+$$
+w_{ki}^q \leftarrow w_{ki}^q + \in \frac{\partial\log p(V)}{\partial w_{ki}^q}
+$$
+
+$$
+\frac{\partial \log p(V)}{\partial w_{ki}^q} = \langle v_i^qh_j\rangle_{data} - \langle v_i^qh_j\rangle_{model}
+$$
+
+​其中 $$\langle.\rangle$$ 表示期望。误差也做如上同样的更新。 $$\langle v_i^q h_j \rangle_{data}$$ 等于，当网络通过数据集 $$D$$ 训练时，二元组 $$h_i$$ 和 $$v_i^q$$ 同时落在数据集 $$D $$的频率，表示网络中的可见单元 $$v_i^q$$ 是在数据集的数据之间。 $$\langle v_i^q h_j \rangle_{model}$$ 表示学习模型定义的 $$v_i^q$$ 分布的期望。由于 $$\langle v_i^q h_j \rangle_{model}$$ 十分难计算，所以我们通常用近似值代替。利用蒙特卡洛对比散度方法，我们可以进行一下估计：
+
+$$
+\langle v_i^qh_j\rangle_T \approx \langle v_i^qh_j\rangle_{model}
+$$
+
+其中 $$\langle v_i^qh_j\rangle_T$$ 表示在 T 阶吉布斯抽样算法上的期望。
+
+     如我们所见，比如，在Netflix竞赛中，RBMS算法在矩阵因式分解比较困难的时候效果很好，反之亦然。正因为这样，一个成功的推荐算法通常同时结合利用矩阵因子分解推荐系统和RBM，来提供组合预测。
+
+## 推荐系统的质量评估
+
+     评估一个推荐系统的最好标准依赖于实际中的推荐问题。在大多数的应用中，最小平方差（RMSE）通常是一个不错的选择。（最小平方差）RMSE 定义如下：
+
+$$
+RMSE = \sqrt{\frac{1}{n}\sum_{(u,i) \in D} (x_{ui} - l_ux_I)^2}
+$$
+
+它可以用来评估 $$x_{ui}$$真实值和预测值的数值上的差异
 
