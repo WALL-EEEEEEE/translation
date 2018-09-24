@@ -9,3 +9,9 @@
 * [Pro Machine Learning Algorithms: A Hands-On Approach to Implementing Algorithms in Python and R](https://github.com/duanqiaobb/translation/blob/master/books/Pro%20Machine%20Learning%20Algorithms.pdf)
 * [Machine Learning Refined](https://github.com/duanqiaobb/translation/blob/master/books/Machine%20Learning%20Refined.pdf)
 
+# BlogList (To be translated)
+
+* [The Best Step-by-Step Bitcoin Script Guide: Part One (Blockgeeks)](https://blockgeeks.com/guides/best-bitcoin-script-guide/)
+* [The Best Step-by-Step Bitcoin Script Guide Part 2](https://blockgeeks.com/guides/bitcoin-script-guide-part-2/)
+
+
