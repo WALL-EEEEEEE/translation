@@ -76,13 +76,13 @@
 
 其中 ：
 
-    $e_{ui} \triangleq x_{ui} - l_u.r_i$ 为 $(u,i)$ 对排名的预测误差。
+&ensp;&ensp;<img src="/translate/big-data-data-mining-and-machine-learning-value-creation-for-business-leaders-and-practitioners/tex/685c7e0516afdfb26c7fafe9539fb263.svg?invert_in_darkmode&sanitize=true" align=middle width=115.68022619999998pt height=30.137058600000014pt/> 为 <img src="/translate/big-data-data-mining-and-machine-learning-value-creation-for-business-leaders-and-practitioners/tex/06f6675a299dd4a46529fc53c67b2af0.svg?invert_in_darkmode&sanitize=true" align=middle width=35.164816499999986pt height=24.65753399999998pt/> 对排名的预测误差。
 
-    $\eta$ 为用户定义的学习步长。
+&ensp;&ensp;<img src="/translate/big-data-data-mining-and-machine-learning-value-creation-for-business-leaders-and-practitioners/tex/1d0496971a2775f4887d1df25cea4f7e.svg?invert_in_darkmode&sanitize=true" align=middle width=8.751954749999989pt height=14.15524440000002pt/> 为用户定义的学习步长。
 
-    随机梯度下降，顾名思义，它每进行一次排名，就从数据集 $D$ 中随机选取一对 $(u,i)$ 更新一次。一旦对数据集 $D$ 完成一次完全遍历，也就是说一个周期。算法再次以不同的随机顺序对同样的数据集$D$。算法不断对数据集重复遍历，直到完全覆盖，这通常需要进行数个遍历周期。
+&ensp;&ensp;&ensp;&ensp;随机梯度下降，顾名思义，它每进行一次排名，就从数据集 <img src="/translate/big-data-data-mining-and-machine-learning-value-creation-for-business-leaders-and-practitioners/tex/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode&sanitize=true" align=middle width=14.06623184999999pt height=22.465723500000017pt/> 中随机选取一对 <img src="/translate/big-data-data-mining-and-machine-learning-value-creation-for-business-leaders-and-practitioners/tex/06f6675a299dd4a46529fc53c67b2af0.svg?invert_in_darkmode&sanitize=true" align=middle width=35.164816499999986pt height=24.65753399999998pt/> 更新一次。一旦对数据集 <img src="/translate/big-data-data-mining-and-machine-learning-value-creation-for-business-leaders-and-practitioners/tex/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode&sanitize=true" align=middle width=14.06623184999999pt height=22.465723500000017pt/> 完成一次完全遍历，也就是说一个周期。算法再次以不同的随机顺序对同样的数据集<img src="/translate/big-data-data-mining-and-machine-learning-value-creation-for-business-leaders-and-practitioners/tex/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode&sanitize=true" align=middle width=14.06623184999999pt height=22.465723500000017pt/>。算法不断对数据集重复遍历，直到完全覆盖，这通常需要进行数个遍历周期。
 
-     随机梯度下降法并不需要将所有数据集存入内存中，所以这个方法在数据集 $D$很大的时候有很大的优势。
+&ensp;&ensp;&ensp;&ensp;随机梯度下降法并不需要将所有数据集存入内存中，所以这个方法在数据集 <img src="/translate/big-data-data-mining-and-machine-learning-value-creation-for-business-leaders-and-practitioners/tex/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode&sanitize=true" align=middle width=14.06623184999999pt height=22.465723500000017pt/>很大的时候有很大的优势。
 
 ## 交替最小二乘法
 
