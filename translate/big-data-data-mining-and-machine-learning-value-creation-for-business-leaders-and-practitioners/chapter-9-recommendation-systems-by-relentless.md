@@ -1,8 +1,7 @@
 # 第九章－推荐系统
 
 &ensp;&ensp;&ensp;&ensp;如果有数据，那数据说了算。如果没有，那么我说了算。
-
-                                                                                                          －前 Netscape CEO Jim Barksdale
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;－前 Netscape CEO Jim Barksdale
 
 ## 推荐系统是什么？
 
