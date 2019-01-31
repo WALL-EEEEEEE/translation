@@ -2,7 +2,7 @@
 
 &ensp;&ensp;&ensp;&ensp;如果有数据，那数据说了算。如果没有，那么我说了算。
 
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;－前 Netscape CEO Jim Barksdale
+<p align="right">－前 Netscape CEO Jim Barksdale</p>
 
 ## 推荐系统是什么？
 
